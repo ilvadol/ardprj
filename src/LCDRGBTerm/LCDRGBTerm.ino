@@ -48,7 +48,6 @@ LiquidCrystal_I2C lcd(I2C_ADDR,En_pin,Rw_pin,Rs_pin,D4_pin,D5_pin,D6_pin,D7_pin)
 // define the RTC settings
 RTC_DS1307 rtc;
 char daysOfTheWeek[7][12] = {"Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"};
-
 // code
 void setup() 
 {
@@ -141,7 +140,7 @@ else
   lcd.print("Temperature: ");
   lcd.print(temperature);
   lcd.setCursor (0,2);
-  lcd.print("Soil Moisture: ");
+  lcd.print("Soil Humidity: ");
   lcd.print (humidsenPinVal);
   }
 // Temperature IF'S
